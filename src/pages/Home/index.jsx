@@ -9,7 +9,7 @@ import { Card, RestauranteCard, Modal, Map, Loader, Skeleton } from '../../compo
 
 
 const Home = () => {
-    const [inputValue, setInputValue] = useState('Cachorro');
+    const [inputValue, setInputValue] = useState('Restaurantes');
     const [query, setQuery] = useState(null);
     const [placeId, setPlaceId] = useState(null);
     const { restaurantes, restauranteSelected } = useSelector((state) => state.restaurantes);
