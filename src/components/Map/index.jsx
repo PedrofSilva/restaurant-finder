@@ -10,7 +10,7 @@ export const MapContainer = (props) => {
     const { restaurantes } = useSelector((state) => state.restaurantes);
     const [map, setMap] = useState(null);
     const { google , query, placeId } = props;
-
+    
     useEffect(()=> {
         if(query) {
             searchByQuery(query);
@@ -22,7 +22,7 @@ export const MapContainer = (props) => {
             getRestaurantById(placeId);
         }
     }, [placeId]);
-
+    
     
         
       
